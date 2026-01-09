@@ -1,0 +1,13 @@
+Database Part - Aishwarya
+
+
+INITIAL FOLDER STRUCTURE (Flexible):
+database/
+  ├── mysql/
+  │   ├── schema.sql
+  │   ├── seed.sql
+  │   └── queries.md
+  │
+  ├── mongodb/
+  │   ├── collections.md
+  │   └── index-config.md

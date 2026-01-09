@@ -1,0 +1,25 @@
+Backend Part - Ayush
+
+INITIAL FOLDER STRUCTURE (Flexible): 
+backend/
+  ├── app/
+  │   ├── routes/
+  │   │    ├── auth.py
+  │   │    ├── transaction.py
+  │   │    └── otp.py
+  │   ├── services/
+  │   │    ├── fraud_rules.py
+  │   │    ├── risk_score.py
+  │   │    └── otp_service.py
+  │   ├── models/
+  │   │    ├── user_model.py
+  │   │    ├── transaction_model.py
+  │   │    └── log_model.py
+  │   ├── db/
+  │   │    ├── mysql_conn.py
+  │   │    └── mongo_conn.py
+  │   └── __init__.py
+  │
+  ├── config.py
+  ├── main.py
+  └── requirements.txt
