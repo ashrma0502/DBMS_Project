@@ -11,10 +11,6 @@ backend/
   │   │    ├── fraud_rules.py
   │   │    ├── risk_score.py
   │   │    └── otp_service.py
-  │   ├── models/
-  │   │    ├── user_model.py
-  │   │    ├── transaction_model.py
-  │   │    └── log_model.py
   │   ├── db/
   │   │    ├── mysql_conn.py
   │   │    └── mongo_conn.py
