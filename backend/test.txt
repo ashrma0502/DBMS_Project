@@ -5,12 +5,10 @@ backend/
   ├── app/
   │   ├── routes/
   │   │    ├── auth.py
-  │   │    ├── transaction.py
-  │   │    └── otp.py
+  │   │    └── transaction.py
   │   ├── services/
   │   │    ├── fraud_rules.py
-  │   │    ├── risk_score.py
-  │   │    └── otp_service.py
+  │   │    └── risk_score.py
   │   ├── db/
   │   │    ├── mysql_conn.py
   │   │    └── mongo_conn.py
