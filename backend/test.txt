@@ -1,5 +1,4 @@
 Backend Part - Ayush
-
 INITIAL FOLDER STRUCTURE (Flexible): 
 backend/
   ├── app/
