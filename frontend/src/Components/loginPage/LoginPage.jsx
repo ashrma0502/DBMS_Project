@@ -14,7 +14,7 @@ const LoginPage = () => {
       return;
     } else {
       console.log(Account, Password)
-      setResult("✔ Loggin Succesfull!....Redirecting...")
+      setResult("✅ Loggin Succesfull!....Redirecting...")
       setFinres(true)
       setTimeout(() => {
         navigate('/dashboard')
