@@ -1,4 +1,4 @@
-Database Part - Aishwarya
+Database Part - Aishwarya Pandey
 
 
 INITIAL FOLDER STRUCTURE (Flexible):
