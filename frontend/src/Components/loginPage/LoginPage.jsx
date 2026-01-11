@@ -9,7 +9,7 @@ const LoginPage = () => {
 
   const handleSubmit = () => {
     if (Account === "" || Password === "") {
-      setResult("❌  Credentials cant't be Empty!")
+      setResult("❌  Credentials can't be Empty!")
       setFinres(false)
       return;
     } else {
@@ -26,7 +26,7 @@ const LoginPage = () => {
     <div className="h-screen w-screen items-center flex justify-center px-5 lg:px-0">
       <div className="w-screen h-screen flex-none bg-white shadow sm:rounded-lg flex justify-center">
         <div className="flex-1 bg-blue-900 text-center hidden md:flex">
-          <img className="object-cover" src="/src/images/login.jpg" alt="banking" />
+          <img loading="lazy" className="object-cover" src="/src/images/login.jpg" alt="banking" />
         </div>
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12 dark:bg-gray">
           <div className=" flex flex-col items-center">
@@ -47,7 +47,7 @@ const LoginPage = () => {
                 />
                 <input
                   className="w-full px-5 py-3 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
-                  type="password" onChange={(event) => setPassword(event.target.value)}
+                  type="password" inputMode="numeric" onChange={(event) => setPassword(event.target.value)}
                   placeholder="E-PIN"
                 />
 
