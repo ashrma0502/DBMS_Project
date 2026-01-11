@@ -1,20 +1,22 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
   const [Account, setAccount] = useState("")
   const [Password, setPassword] = useState("")
   const [Result, setResult] = useState("")
   const [finRes, setFinres] = useState(true)
+  const navigate = useNavigate()
 
   const handleSubmit = () => {
     if (Account === "" || Password === "") {
       console.log('Enter Credentials!')
-      setResult("Invalid Credentials!")
+      setResult("Credentials cant't be Empty!")
       setFinres(false)
     } else {
       console.log(Account, Password)
       setResult("Loggin Succesfull!")
       setFinres(true)
+      navigate('/dashboard')
     }
   }
 
