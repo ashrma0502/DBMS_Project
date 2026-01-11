@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Greetings = () => {
   return (
     <div className="p-5 bg-white rounded-xl shadow text-center">

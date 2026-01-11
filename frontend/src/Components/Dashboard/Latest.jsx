@@ -1,5 +1,4 @@
 
-
 const Latest = () => {
   return (
     <div className="p-5 bg-white rounded-xl shadow text-center mt-5">

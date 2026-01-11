@@ -1,5 +1,4 @@
 import Greetings from "./Components/Dashboard/Greetings"
-import Credit from "./Components/Dashboard/Credit"
 import Debit from "./Components/Dashboard/Debit"
 import Latest from "./Components/Dashboard/Latest"
 import History from "./Components/Dashboard/History"
