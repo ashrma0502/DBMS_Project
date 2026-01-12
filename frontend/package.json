@@ -14,8 +14,11 @@
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.7",
     "@tailwindcss/vite": "^4.1.18",
+    "flowbite": "^4.0.1",
+    "flowbite-react": "^0.12.16",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.12.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
@@ -29,5 +32,4 @@
     "globals": "^16.5.0",
     "vite": "^7.2.4"
   }
-
 }
