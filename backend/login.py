@@ -7,8 +7,6 @@ app = FastAPI()
 # Configure CORS
 # Update origins to match the URL where your JavaScript is running (e.g., "http://localhost:5500")
 origins = [
-    "http://localhost",
-    "http://127.0.0.1",
     "http://localhost:8000",
     "http://127.0.0.1:8000"
 ]
@@ -37,9 +35,9 @@ def submit_item(item: Item):
     result=mycur.fetchone()
 
     if result:
-        response = {"message": "Login successful"}
+        response = {"message": "Login successful...redirecting","username": result["USERNAME"],"success":True}
     else:
-        response = {"message": "Invalid credentials"}
+        response = {"message": "Invalid credentials",'success': False}
 
     mycur.close()
     mycon.close()
