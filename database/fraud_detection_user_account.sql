@@ -18,6 +18,9 @@
 --
 -- Table structure for table `user_account`
 --
+CREATE DATABASE IF NOT EXISTS fraud_detection;
+USE fraud_detection;
+
 
 DROP TABLE IF EXISTS `user_account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

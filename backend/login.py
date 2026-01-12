@@ -7,8 +7,7 @@ app = FastAPI()
 # Configure CORS
 # Update origins to match the URL where your JavaScript is running (e.g., "http://localhost:5500")
 origins = [
-    "http://localhost:8000",
-    "http://127.0.0.1:8000"
+    "http://localhost:5173",
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -26,7 +25,7 @@ class Item(BaseModel):
 
 @app.post("/submit_item/")
 def submit_item(item: Item):
-    mycon = msc.connect( user="root", passwd="password", host="localhost",database="fraud_detection" )
+    mycon = msc.connect( user="root", passwd="Techno@blast", host="localhost",database="fraud_detection" )
 
     mycur = mycon.cursor(dictionary=True)
 
