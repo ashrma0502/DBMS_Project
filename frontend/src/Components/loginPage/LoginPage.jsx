@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ErrorAlert from "./ErrorAlert";
+import SuccessAlert from "./SuccessAlert";
 const LoginPage = () => {
   const [Account, setAccount] = useState("")
   const [Password, setPassword] = useState("")
@@ -73,16 +75,10 @@ const LoginPage = () => {
                   placeholder="E-PIN"
                 />
 
-                {error && (
-                  <div className="w-auto h-auto p-3 text-center rounded-sm bg-red-300 border-l-4 border-red-500 text-red-700">
-                    {error}
-                  </div>
-                )}
+                {error && <ErrorAlert message={error} />}
 
                 {success && (
-                  <div className="w-auto h-auto p-3 text-center rounded-sm bg-green-300 border-l-4 border-green-500 text-green-700">
-                    {success}
-                  </div>
+                  <SuccessAlert message={success} />
                 )}
 
                 <button onClick={handleSubmit} className="mt-5 tracking-wide font-semibold bg-blue-900 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 cursor-pointer transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
