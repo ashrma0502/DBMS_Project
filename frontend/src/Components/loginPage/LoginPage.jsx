@@ -33,7 +33,7 @@ const LoginPage = () => {
       if (data.success) {
         setSuccess(data.message);
         setError("");
-
+        localStorage.setItem('user_id', data.user_id)
         setTimeout(() => navigate("/dashboard"), 1500);
       } else {
         setError(data.message);

@@ -3,7 +3,9 @@ import { useState } from "react"
 const Debit = () => {
   const [empty, setEmpty] = useState('')
   const handleInp = () => {
-    
+    if (localStorage.getItem()) {
+
+    }
   }
   return (
     <div className="p-5 bg-white rounded-xl shadow-2xl text-center ">
