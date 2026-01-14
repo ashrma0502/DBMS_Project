@@ -5,7 +5,7 @@ const Logout = () => {
   let navigate = useNavigate();
   const logoutPage = () => {
     navigate('/')
-    localStorage.removeItem('user_id')
+    sessionStorage.removeItem('user_id')
   }
   return (
     <div className="bg-white rounded-xl flex justify-end p-3">
