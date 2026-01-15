@@ -1,7 +1,7 @@
-const Greetings = () => {
+const Greetings = (props) => {
   return (
     <div className="p-5 bg-white rounded-xl shadow text-center">
-      <h2 className="text-xl font-semibold">Hello, Harshit</h2>
+      <h2 className="text-xl font-semibold">Hello {props.username}</h2>
       <p className="text-blue-600 text-lg mt-1">Balance: ₹ 12,500.00</p>
     </div>
   )

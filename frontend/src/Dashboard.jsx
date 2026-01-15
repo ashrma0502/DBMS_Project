@@ -16,7 +16,7 @@ const Dashboard = () => {
         const res = await fetch(`http://localhost:8000/user/${user_id}`)
         const data = await res.json()
         console.log(data)
-        setUserData(data)
+        setUserData(data.user.USERNAME)
         // console.log(userData)
       } catch (error) {
         console.log(error)
@@ -30,7 +30,7 @@ const Dashboard = () => {
     <>
       <div className="p-5 space-y-5 bg-blue-900 w-screen h-screen">
         <Logout />
-        <Greetings />
+        <Greetings usename={userData} />
         <div className="m-auto">
           {/* <Credit /> */}
           <Debit />
