@@ -6,10 +6,10 @@ import History from "./Components/Dashboard/History"
 import Logout from "./Components/Dashboard/Logout"
 
 const Dashboard = () => {
-  const [userData, setUserData] = useState(null)
+  const [userData, setUserData] = useState('')
   const user_id = sessionStorage.getItem("user_id")
   useEffect(() => {
-    if (!user_id) window.location.href = '/login'
+    if (!user_id) window.location.href = '/'
     
     const fetchData = async () => {
       try {
@@ -22,7 +22,7 @@ const Dashboard = () => {
         console.log(error)
       }
     }
-
+    
     fetchData()
   
   }, [])
@@ -30,7 +30,7 @@ const Dashboard = () => {
     <>
       <div className="p-5 space-y-5 bg-blue-900 w-screen h-screen">
         <Logout />
-        <Greetings usename={userData} />
+        <Greetings username={userData} />
         <div className="m-auto">
           {/* <Credit /> */}
           <Debit />
